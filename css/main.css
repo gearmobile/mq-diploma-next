@@ -1,0 +1,111 @@
+/* --------Главный контент ----------------------- */
+
+.section {
+    position: relative;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper:nth-child(1) {
+    background-color: #fafafa;
+    padding-top: 20px;
+}
+
+.content-wrapper:nth-child(2) {
+    background-color: #f5f4f9;
+    ;
+}
+
+.content-wrapper:nth-child(3) {
+    background-color: #5e42b0;
+}
+
+.content-wrapper.other-color {
+    background-color: #090c35;
+}
+
+.title {
+    font-size: 48px;
+    color: #e7e7e7;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 228px;
+}
+
+.footballer::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/footballer_192.png);
+    background-repeat: no-repeat;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    left: 65px;
+}
+
+.basketballer::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/basketballer_302.png);
+    background-repeat: no-repeat;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.subtitle-box {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+.number {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    position: relative;
+    display: block;
+}
+
+.number::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 4px;
+    border-radius: 1px;
+    background-color: #5e42b0;
+}
+
+.number.other-color {
+    color: #8765dd;
+}
+
+.number.other-color::after {
+    background-color: #ffffff;
+}
+
+.subtitle {
+    margin-left: 6px;
+    font-size: 23px;
+    color: #c1c1c1;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.text.other-color {
+    color: #ffffff;
+}

@@ -1,0 +1,334 @@
+/* --------------Шапка  -----------------------------------------------*/
+
+.header {
+  position: relative;
+  background-image: url(../images/football_767.jpg);
+  background-color: #0a0e34;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  background-color: #0a0e34;
+  opacity: 0.9;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.header-container {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.header-container {
+  position: relative;
+  z-index: 10;
+}
+
+.logo-text-img {
+  width: 40vw;
+  max-width: 160px;
+  fill: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 5vh; */
+}
+
+.welcome-title-container {
+  margin-top: 22vh;
+  margin-bottom: 14vh;
+}
+
+.welcome-title {
+  display: block;
+  font-size: 8.75vw;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.line-2 {
+  margin-top: 16px;
+  padding-left: 10vw;
+}
+
+.apple-box,
+.google-box {
+  width: 100%;
+  max-width: 320px;
+  height: 36px;
+  border-radius: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5e42b0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.apple-box {
+  margin-bottom: 13px;
+}
+
+.apple-icon,
+.google-icon {
+  width: 25px;
+  margin-right: 6px;
+  fill: #ffffff;
+}
+
+.download-text {
+  font-size: 8px;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.store {
+  display: block;
+  font-weight: 700;
+}
+
+/* ========================================================
+                Версия для планшета                      */
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
+
+  .header-container {
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+
+  .logo-text-img {
+    width: 29vw;
+    max-width: 222px;
+    padding-top: 3vh;
+  }
+
+  .welcome-title-container {
+    margin-top: 18vh;
+    margin-bottom: 32vh;
+    padding-left: 7vw;
+  }
+
+  .welcome-title {
+    font-size: 64px;
+    letter-spacing: 3px;
+  }
+
+  .line-2 {
+    margin-top: 0;
+    width: 92%;
+  }
+
+  .download-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .apple-box,
+  .google-box {
+    width: 40vw;
+    height: 78px;
+    border-radius: 38px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .apple-box {
+    margin-bottom: 0;
+  }
+
+  .apple-icon,
+  .google-icon {
+    width: 45px;
+    margin-right: 25px;
+  }
+
+  .download-text {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/* =========================================================
+                     Версия для десктопа                  */
+
+@media (min-width: 961px) and (max-width: 1920px) {
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
+
+  .header-container {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .logo-text-img {
+    width: 10vw;
+    min-width: 180px;
+    max-width: 200px;
+    padding-top: 5vh;
+  }
+
+  .welcome-title-container {
+    margin-top: 28vh;
+    margin-bottom: 24vh;
+  }
+
+  .welcome-title {
+    font-size: 4.7vw;
+    letter-spacing: 5px;
+    line-height: 1;
+  }
+
+  .line-2 {
+    margin-top: 0;
+    width: max-content;
+    align-self: flex-end;
+  }
+
+  .download-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apple-box,
+  .google-box {
+    width: 16vw;
+    min-width: 260px;
+    height: 78px;
+    border-radius: 38px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .apple-box {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+
+  .apple-icon,
+  .google-icon {
+    width: 45px;
+    margin-right: 25px;
+  }
+
+  .download-text {
+    font-size: 14px;
+  }
+
+  .apple-box:hover,
+  .google-box:hover {
+    background-color: #090c35;
+  }
+
+  .apple-box:hover > .apple-icon,
+  .google-box:hover > .google-icon {
+    fill: #8765dd;
+  }
+
+  .apple-box:hover > .download-text,
+  .google-box:hover > .download-text {
+    color: #8765dd;
+  }
+}
+
+/* ==============================================================================================
+                    Версия для широкоформатных экранов             */
+
+@media (min-width: 1921px) {
+
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
+
+  .header-container {
+    width: 1920px;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo-text-img {
+    width: 10vw;
+    min-width: 180px;
+    max-width: 200px;
+    padding-top: 5vh;
+  }
+
+  .welcome-title-container {
+    margin-top: 28vh;
+    margin-bottom: 24vh;
+  }
+  .welcome-title {
+    font-size: 4.7vw;
+    letter-spacing: 5px;
+    line-height: 1;
+  }
+
+  .line-2 {
+    margin-top: 0;
+    width: max-content;
+    align-self: flex-end;
+  }
+
+  .download-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .apple-box,
+  .google-box {
+    width: 16vw;
+    min-width: 260px;
+    height: 78px;
+    border-radius: 38px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .apple-box {
+    margin-bottom: 0;
+    margin-right: 45px;
+  }
+
+  .apple-icon,
+  .google-icon {
+    width: 45px;
+    margin-right: 25px;
+  }
+
+  .download-text {
+    font-size: 14px;
+  }
+
+  .apple-box:hover,
+  .google-box:hover {
+    background-color: #090c35;
+  }
+
+  .apple-box:hover > .apple-icon,
+  .google-box:hover > .google-icon {
+    fill: #8765dd;
+  }
+  
+  .apple-box:hover > .download-text,
+  .google-box:hover > .download-text {
+    color: #8765dd;
+  }
+
+}
